@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+    overflow: hidden;
+}
+
+.header{
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    
+}
+
+.logo span{
+    color: #ffffff;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav-links ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.nav-links ul li a:hover{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.4) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.btn-primary{
+    margin-left: 100px;
+    color: #000000;
+    background: #ffffff;
+}
+
+.btn:hover{
+    scale: 105%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pricing-card {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+}
+
+.pricing-card p {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin: 5px 0;
+}
+
+.select-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.select-button:hover {
+    background-color: #0056b3;
+}
+
+.font-color{
+    color: white;
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>|MAZUR|<span>|GRZEGORZ|</span></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+            </div>
+            <a href="KONTAKT.html" class="btn">Contact</a>
+        </header>
+        <div class="glowing-line"></div>
+            <div class="pricing-container">
+                <div class="pricing-card">
+                    <h2>WEBSITE</h2>
+                    <p>290 PLN</p>
+                    <ul>
+                        <li>TWORZENIE STRONEK INTERNETOWYCH </li>
+                        <img src="" height="150px" width="250px" id="Graphic Need For Speed">
+                    </ul>
+                    <button class="select-button" data-plan="Premium">SELECT</button>
+                </div>
+                <div class="pricing-card">
+                    <h2>FREE CODE</h2>
+                    <p>0 PLN</p>
+                    <ul>
+                        <li> JAKIES AMOATORSKIE KODY ZA FREE DO UZYTKU BEZ PRAW AUTORSKICH </li>
+                        <img src="" height="150px" width="250px" id="Graphic Minecraft">
+                    </ul>
+                    <button class="select-button" data-plan="Premium">SELECT</button>
+                </div>
+                <div class="pricing-card">
+                    <h2>HACKER CODE</h2>
+                    <p>250 PLN</p>
+                    <ul>
+                        <li> NIEBEZPIECZNE KODY XD</li>
+                        <img src="forza.webp" height="150px" width="250px" id="Forza Horizon 5 Graphic">
+                    </ul>
+                    <button class="select-button" data-plan="Premium">SELECT</button>
+                </div>
+                <div class="pricing-card">
+                    <h2>GAMER</h2>
+                    <p>600 PLN</p>
+                    <ul>
+                        <li> WIDEO FILMY Z GAMPLAÓW </li>
+                        <img src="" height="150px" width="250px" id="Battlefield 2042 Graphic">
+                    </ul>
+                    <button class="select-button" data-plan="Premium">SELECT</button>
+                </div>
+            </div>
+
+
+</body>
+</html>

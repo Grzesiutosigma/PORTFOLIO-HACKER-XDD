@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <style>
+        
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+    overflow: hidden;
+}
+
+.header{
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    
+}
+
+.logo span{
+    color: #ffffff;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.nav-links ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.nav-links ul li a:hover{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 2px 4px, 
+    rgba(0, 0, 0, 0.4) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.btn-primary{
+    margin-left: 100px;
+    color: #000000;
+    background: #ffffff;
+}
+
+.btn:hover{
+    scale: 105%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.phone-number {
+            display: none;
+            font-size: 100px;
+            margin-top: 10px;
+            color: white;
+            position: absolute;
+            margin-top: 400px;
+            left: 600px;
+            align-items: center;
+        }
+        .btn2 {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            margin-top: 200px;
+            left: 840px;
+            align-items: center;
+        }
+        .btn:hover {
+            background-color: #ffffff;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>|MAZUR|<span>|GRZEGORZ|</span></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+            </div>
+            <a href="" class="btn">Contact</a>
+        </header>
+        <button class="btn2" onclick="showPhoneNumber()">SHOW NUMBER PHONE</button>
+        <div class="phone-number" id="phone-number">+48 123 456 789</div>
+    
+        <script>
+            function showPhoneNumber() {
+                document.getElementById('phone-number').style.display = 'block';
+            }
+        </script>
+
+</body>
+</html>
